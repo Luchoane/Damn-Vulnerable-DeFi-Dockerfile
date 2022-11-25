@@ -1,6 +1,6 @@
 FROM node:14.17.1 as build
 
-# Install openssh-server, permit root login and expose 22
+# Install openssh-server, permit auth login and expose 22
 RUN apt-get update && apt-get install -y openssh-server
 RUN adduser --home /home/gato --shell /bin/sh gato
 RUN echo 'gato:gato123' | chpasswd
