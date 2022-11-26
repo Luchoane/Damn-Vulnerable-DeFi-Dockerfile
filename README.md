@@ -11,7 +11,7 @@ https://www.damnvulnerabledefi.xyz/
 To setup this docker container execute:
 
 ```
-docker build -t  dvdefi .
+docker build -t dvdefi .
 docker run --name dvdefi -d -p 22:22 dvdefi
 ```
 
